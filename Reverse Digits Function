@@ -1,0 +1,10 @@
+def reverse_integer(n):
+    sign = -1 if n < 0 else 1
+    reversed_n = int(str(abs(n))[::-1])
+    return sign * reversed_n
+
+# Example usage
+print(reverse_integer(500))  # 5
+print(reverse_integer(-56))  # -65
+print(reverse_integer(-90))  # -9
+print(reverse_integer(91))  # 19
